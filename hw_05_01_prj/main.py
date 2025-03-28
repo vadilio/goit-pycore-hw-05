@@ -40,7 +40,7 @@ def measure_time(func, n):
         f"Fibonacci({n}) = {result}, виконано за {execution_time:.6f} секунд")
 
 
-if __name__ == "__main__":
+def main():
     fib_cashed = caching_fibonacci()
     fib_uncashed = un_caching_fibonacci()
     print('Cashed:')
@@ -58,3 +58,7 @@ if __name__ == "__main__":
     # fib = caching_fibonacci()
     # print(fib(10))  # 55
     # print(fib(15))  # 610
+
+
+if __name__ == "__main__":
+    main()
