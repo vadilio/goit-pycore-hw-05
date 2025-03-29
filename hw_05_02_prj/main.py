@@ -4,8 +4,8 @@ from typing import Callable
 
 def generator_numbers(text: str):
     """Генератор, который находит все целые числа в тексте и возвращает их по очереди."""
-    for match in re.findall(r'\b\d+\.\d+\b', text):  # Знаходимо всі цілі числа
-        yield float(match)  # Повертаємо їх у вигляді int
+    for match in re.findall(r'\b\d+\.\d+\b', text):  # Знаходимо всі суми
+        yield float(match)  # Повертаємо їх у вигляді float
 
 
 def sum_profit(text: str, func: Callable[[str], float]) -> float:
