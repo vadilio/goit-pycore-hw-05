@@ -35,7 +35,7 @@ Phone Username - Показати контакт
         elif command == "phone":
             print(get_name_byphone(args, contacts))
         elif command == "all":
-            print(get_all(args, contacts))
+            print(get_all(contacts))
         else:
             print(error_message)
 
